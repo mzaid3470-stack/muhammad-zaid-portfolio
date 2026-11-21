@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgApplique" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121e"/>
+      <stop offset="100%" stop-color="#111c2e"/>
+    </linearGradient>
+    <pattern id="tweedPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 12 M 12 0 L 0 12" stroke="#38bdf8" stroke-width="0.75" opacity="0.3"/>
+    </pattern>
+    <filter id="patchShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgApplique)"/>
+
+  <!-- Simulated Fabric Base -->
+  <g transform="translate(400, 260)" filter="url(#patchShadow)">
+    <!-- Applique Fabric Cutout (Star shape) -->
+    <path d="M 0 -130 L 38 -45 L 130 -45 L 56 12 L 85 98 L 0 45 L -85 98 L -56 12 L -130 -45 L -38 -45 Z" 
+          fill="#0284c7" fill-opacity="0.85"/>
+    <path d="M 0 -130 L 38 -45 L 130 -45 L 56 12 L 85 98 L 0 45 L -85 98 L -56 12 L -130 -45 L -38 -45 Z" 
+          fill="url(#tweedPattern)"/>
+
+    <!-- Step 1: Placement Run Guide Line (Cyan Dash) -->
+    <path d="M 0 -140 L 41 -48 L 140 -48 L 60 13 L 91 105 L 0 48 L -91 105 L -60 13 L -140 -48 L -41 -48 Z" 
+          fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.6"/>
+
+    <!-- Step 2: Tack Down Stitch (Zigzag) -->
+    <path d="M 0 -134 L 39 -46 L 134 -46 L 58 12 L 88 101 L 0 46 L -88 101 L -58 12 L -134 -46 L -39 -46 Z" 
+          fill="none" stroke="#e0f2fe" stroke-width="2" stroke-dasharray="2 3"/>
+
+    <!-- Step 3: Satin Border Cover Stitch (Golden/Orange) -->
+    <path d="M 0 -130 L 38 -45 L 130 -45 L 56 12 L 85 98 L 0 45 L -85 98 L -56 12 L -130 -45 L -38 -45 Z" 
+          fill="none" stroke="#f59e0b" stroke-width="8" stroke-linejoin="round"/>
+    
+    <!-- Central Embroidered Initial -->
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="64" 
+          fill="#ffffff" text-anchor="middle">MZ</text>
+  </g>
+
+  <!-- Spec Badges Bar -->
+  <g transform="translate(40, 480)">
+    <rect width="720" height="90" rx="16" fill="#0b1120" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <text x="24" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#f8fafc">
+      Applique Embroidery Digitizing — 3-Step Multi-Layer Patch
+    </text>
+    <text x="24" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#94a3b8">
+      Placement Run • Tack-Down Stitch • Satin Border Seal (4.0mm) • Wilcom ES
+    </text>
+
+    <!-- Format Pills -->
+    <rect x="520" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="550" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#f59e0b" text-anchor="middle">DST</text>
+
+    <rect x="590" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="620" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#a855f7" text-anchor="middle">EMB</text>
+
+    <rect x="660" y="24" width="48" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="684" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#38bdf8" text-anchor="middle">JEF</text>
+
+    <text x="520" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">
+      📷 Placeholder Sample
+    </text>
+  </g>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(40, 30)">
+    <rect width="180" height="32" rx="16" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#38bdf8"/>
+    <text x="32" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#e0f2fe">
+      APPLIQUE DIGITIZING
+    </text>
+  </g>
+</svg>

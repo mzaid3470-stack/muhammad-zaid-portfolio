@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgJacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c14"/>
+      <stop offset="100%" stop-color="#141a29"/>
+    </linearGradient>
+    <linearGradient id="goldEagle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="jacketShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgJacket)"/>
+
+  <!-- Large Format Hoop & Design -->
+  <g transform="translate(400, 240)" filter="url(#jacketShadow)">
+    <!-- 360mm x 300mm Jacket Back Frame Outline -->
+    <rect x="-260" y="-150" width="520" height="300" rx="24" fill="#0f172a" stroke="#334155" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="0" y="-160" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">
+      LARGE FORMAT HOOP (360mm × 300mm) — 45,000+ STITCHES
+    </text>
+
+    <!-- Ornate Banner Top -->
+    <path d="M -180 -100 Q 0 -140 180 -100 L 160 -70 Q 0 -110 -160 -70 Z" fill="url(#goldEagle)"/>
+    <text x="0" y="-82" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#000000" text-anchor="middle" letter-spacing="3">PRECISION STITCH ART</text>
+
+    <!-- Large Eagle Wings Artwork Simulated Stitches -->
+    <path d="M 0 -30 C -80 -80, -180 -60, -220 20 C -160 10, -100 20, 0 80 C 100 20, 160 10, 220 20 C 180 -60, 80 -80, 0 -30 Z" 
+          fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 0 -10 C -60 -50, -140 -40, -170 20 C -120 10, -80 20, 0 60 C 80 20, 120 10, 170 20 C 140 -40, 60 -50, 0 -10 Z" 
+          fill="url(#goldEagle)" opacity="0.8"/>
+    
+    <!-- Central Shield & MZ -->
+    <polygon points="0,0 35,40 0,90 -35,40" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+    <text x="0" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">MZ</text>
+
+    <!-- Bottom Ribbon -->
+    <path d="M -150 110 Q 0 90 150 110 L 130 130 Q 0 110 -130 130 Z" fill="url(#goldEagle)"/>
+    <text x="0" y="124" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" fill="#000000" text-anchor="middle" letter-spacing="2">WILCOM ADVANCED DIGITIZING</text>
+  </g>
+
+  <!-- Spec Badges Bar -->
+  <g transform="translate(40, 480)">
+    <rect width="720" height="90" rx="16" fill="#0b1120" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <text x="24" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#f8fafc">
+      Jacket Back &amp; Large Format Complex Digitizing
+    </text>
+    <text x="24" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#94a3b8">
+      Multi-Sequence Layering • Density Balancing • Push/Pull Warping Compensation
+    </text>
+
+    <rect x="520" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="550" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#f59e0b" text-anchor="middle">DST</text>
+
+    <rect x="590" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="620" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#a855f7" text-anchor="middle">EMB</text>
+
+    <rect x="660" y="24" width="48" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="684" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#38bdf8" text-anchor="middle">EXP</text>
+
+    <text x="520" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">
+      📷 Placeholder Sample
+    </text>
+  </g>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(40, 30)">
+    <rect width="210" height="32" rx="16" fill="#422006" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#f59e0b"/>
+    <text x="32" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#fef3c7">
+      JACKET BACK DIGITIZING
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mzaid3470-stack.github.io/sitemap.xml

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#181528"/>
+    </linearGradient>
+    <linearGradient id="puffRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="30%" stop-color="#ef4444"/>
+      <stop offset="70%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="puffHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="puffDepth" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="14" stdDeviation="8" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+    <pattern id="stitchPattern3D" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0 4 L 8 4" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="3 1" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad3D)"/>
+  <rect width="800" height="600" fill="url(#stitchPattern3D)"/>
+
+  <!-- Cap Crown Curve Guide -->
+  <path d="M 100 420 Q 400 350 700 420" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 4" opacity="0.4"/>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    STRUCTURED CAP FRONT ARCH — CURVED DIGITIZING PATH
+  </text>
+
+  <!-- 3D Puff Raised Lettering Simulation -->
+  <g transform="translate(400, 240)" filter="url(#puffDepth)">
+    <!-- Foam Underlay Silhouette Base -->
+    <text x="-120" y="30" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="160" 
+          fill="#450a0a" text-anchor="middle" letter-spacing="4">3</text>
+    <text x="110" y="30" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="160" 
+          fill="#450a0a" text-anchor="middle" letter-spacing="4">D</text>
+
+    <!-- Main 3D Puff Satin Raised Surface -->
+    <text x="-125" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="160" 
+          fill="url(#puffRed)" text-anchor="middle" letter-spacing="4" stroke="#fca5a5" stroke-width="2">3</text>
+    <text x="105" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="160" 
+          fill="url(#puffRed)" text-anchor="middle" letter-spacing="4" stroke="#fca5a5" stroke-width="2">D</text>
+
+    <!-- Satin Stitch Lines Overlay -->
+    <path d="M -180 -80 Q -120 -85 -70 -80 M -180 -40 Q -120 -45 -70 -40 M -180 0 Q -120 -5 -70 0" 
+          stroke="url(#puffHighlight)" stroke-width="2" fill="none"/>
+
+    <!-- Foam Perforation End Capping Indicators -->
+    <circle cx="-185" cy="-80" r="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="-65" cy="-80" r="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="50" cy="-80" r="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="160" cy="-80" r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Spec Badges Bar -->
+  <g transform="translate(40, 480)">
+    <rect width="720" height="90" rx="16" fill="#0b1120" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <text x="24" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#f8fafc">
+      3D Puff Foam Embroidery — Raised Athletic Lettering
+    </text>
+    <text x="24" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#94a3b8">
+      High Density Satin • Capped Ends • 2.5mm–3mm EVA Foam • Clean Needle Cut
+    </text>
+
+    <!-- Format Pills -->
+    <rect x="520" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+    <text x="550" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#ef4444" text-anchor="middle">DST</text>
+
+    <rect x="590" y="24" width="60" height="26" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="620" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#a855f7" text-anchor="middle">EMB</text>
+
+    <rect x="660" y="24" width="48" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="684" y="42" font-family="monospace" font-weight="bold" font-size="12" fill="#38bdf8" text-anchor="middle">PES</text>
+
+    <text x="520" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">
+      📷 Placeholder Sample
+    </text>
+  </g>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(40, 30)">
+    <rect width="180" height="32" rx="16" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#a855f7"/>
+    <text x="32" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#f3e8ff">
+      3D PUFF EMBROIDERY
+    </text>
+  </g>
+</svg>
